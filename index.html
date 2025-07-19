@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="main-title">Welcome to <span class="poke-green">Pokemon World!</span></h1>
+    <div class="center-container">
+        <input type="text" placeholder="Enter your fav pokemon" id="pokemonName">
+        <div id="pokemonImageContainer">
+            <img src="" alt="Pokemon Sprite" id="pokemonSprite" class="poke-img" style="display:none;">
+        </div>
+        <button onclick="fetchData()">Fetch Data</button>
+        <div id="pokemonMessage" style="display: none;">
+            <div id="welcomeText" class="welcome-text msg-bubble"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
