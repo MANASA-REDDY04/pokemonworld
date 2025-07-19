@@ -1,25 +1,3 @@
-// function fetchData() {
-//     const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
-//     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-//         .then(res => res.json())
-//         .then(data => {
-//             const sprite = data.sprites.front_default;
-//             const pokemonSprite = document.getElementById('pokemonSprite');
-//             const pokemonMessage = document.getElementById('pokemonMessage');
-//             const welcomeText = document.getElementById('welcomeText');
-
-//             pokemonSprite.src = sprite;
-//             pokemonSprite.style.display = 'block';
-//             welcomeText.textContent = `Hi, I'm ${pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}, welcome to Pokemon World!`;
-
-//             pokemonMessage.style.display = 'block';
-//         })
-//         .catch(() => {
-//             alert('Pokemon not found!');
-//         });
-// }
-
-
 async function fetchData() {
     const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
     const pokemonSprite = document.getElementById('pokemonSprite');
